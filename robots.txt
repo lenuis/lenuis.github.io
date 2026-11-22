@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lenuis.github.io/sitemap.xml

@@ -1,0 +1,5 @@
+Contact: mailto:ideaparklenuis@gmail.com
+Expires: 2027-09-15T23:59:59Z
+Preferred-Languages: zh-CN, en
+Canonical: https://lenuis.github.io/.well-known/security.txt
+Policy: https://lenuis.github.io/legal/#claims

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>帮助与支持｜Cubimi</title>
+  <meta name="description" content="Cubimi安装、权限、数据位置、故障恢复和版本说明。">
+  <meta name="theme-color" content="#0b0d0e"><link rel="canonical" href="https://lenuis.github.io/support/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v=task463-20261002">
+  <script defer src="/assets/i18n-data.js?v=task471"></script><script defer src="/assets/i18n.js?v=task462-20261002"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header"><nav class="nav" aria-label="主导航"><a class="brand" href="/"><img src="/assets/app-icon.png" alt=""><span>Cubimi</span></a><div class="nav-links"><a href="/">产品</a><a aria-current="page" href="/support/">支持</a><a href="/privacy/">隐私政策</a><a href="/terms/">使用条款</a><a href="/legal/">法律声明</a></div></nav></header>
+  <main id="main">
+    <section class="legal-hero"><div class="shell"><p class="eyebrow">Help &amp; Support</p><h1>遇到问题，先把文件放在安全的位置。</h1><p>这里提供Cubimi的安装、权限、数据备份和恢复方法。</p></div></section>
+    <div class="shell legal-layout">
+      <nav class="toc" aria-label="本页目录"><a href="#quick-help">快速帮助</a><a href="#install">安装</a><a href="#permissions">权限</a><a href="#data">数据与备份</a><a href="#recovery">故障恢复</a><a href="#release">版本信息</a><a href="#report">反馈问题</a></nav>
+      <article class="legal-copy">
+        <h2 id="quick-help">快速帮助</h2>
+        <div class="support-grid">
+          <div class="support-card"><h3>窗口找不到</h3><p>点击 Dock 中的Cubimi，或使用已设置的全局快捷键。应用支持跨空间显示，但系统全屏和多显示器仍可能需要切换一次。</p></div>
+          <div class="support-card"><h3>桌面图标未恢复</h3><p>先正常退出应用并等待片刻。不要立即移动或批量改名原桌面文件；确认文件仍在桌面目录后再重新打开。</p></div>
+          <div class="support-card"><h3>分区全删了</h3><p>空白工作区可以新建分区；也可点击“＋”选择位置，再选择文件、网页或小工具内容。</p></div>
+        </div>
+
+        <h2 id="install">首次使用前</h2>
+        <ol>
+          <li>安装前备份重要桌面文件和现有工作台配置。</li>
+          <li>当前为发布准备阶段；正式版本将通过 Mac App Store 分发，尚未提供正式商店链接。</li>
+          <li>打开Cubimi并创建第一个工作区。</li>
+          <li>使用桌面、文稿、下载、外接盘或日历功能时，按需授予对应权限。</li>
+        </ol>
+        <div class="callout"><strong>发布状态</strong><br>Cubimi 尚未在 App Store 上线；商店下载链接将在上线后提供。</div>
+
+        <h2 id="permissions">权限为什么需要</h2>
+        <table class="data-table"><thead><tr><th>权限</th><th>用途</th><th>拒绝后的影响</th></tr></thead><tbody>
+          <tr><td>桌面/文稿/下载/外接盘</td><td>浏览和收纳你选择的文件</td><td>仅对应来源不可用</td></tr>
+          <tr><td>日历</td><td>读取并按你的操作增改删日程；提醒事项权限单独控制</td><td>仍可使用本机日历和待办</td></tr>
+          <tr><td>本地网络</td><td>连接你配置的本地 AI</td><td>本地 AI 端点不可用</td></tr>
+          <tr><td>辅助功能</td><td>本地测试版用于 Dock 定位、选区导入及获批的电脑控件操作</td><td>这些辅助功能不可用；商店版提供范围仍待最终验收</td></tr>
+        </tbody></table>
+        <p>你可以随时在“系统设置 → 隐私与安全性”中撤回权限。应用不会用一项权限去实现不相关的功能。</p>
+
+        <h2 id="data">数据位置与备份</h2>
+        <p><span>配置目录由系统为当前 Cubimi 应用提供，沙盒版与旧测试版的位置不同。收纳文件、AI 对话和附件可能保存在自选位置。备份前，请在“设置 → 存储”中核对并打开实际位置；配置目录请联系支持确认</span>。AI 密钥位于系统钥匙串；网页 Cookie 和站点数据由 WebKit 管理；已复制到系统剪贴板的文件缓存位于用户缓存目录。</p>
+        <ol>
+          <li>先在应用内保存正在编辑的便签或待办并正常退出。</li>
+          <li>备份应用支持目录，并另外备份“设置 → 存储”中选择的对话、AI 文件与收纳文件目录；这些位置可能不在默认目录内。</li>
+          <li>需要回退应用版本时，同时保留与该版本匹配的配置备份。</li>
+        </ol>
+
+        <h2 id="recovery">常见恢复方式</h2>
+        <h3>卸载前如何保留收纳文件</h3><p>删除独立存储分区时选择“恢复到原位置并删除”，核对文件确已恢复；失败时重新授权后重试。若选择保留文件，先找到收纳目录并独立备份。配置导出不包含文件实体。</p><h3>分区显示来源失联</h3><p>重新连接原磁盘或在分区菜单中重新选择来源。应用会保留失联记录，不会把“读不到”冒充“整理完成”。</p>
+        <h3>配置无法保存</h3><p>检查磁盘剩余空间和应用支持目录权限。不要删除应用自动保留的不可读原件；完成备份后再使用恢复入口。</p>
+        <h3>AI 请求一直等待</h3><p>查看对话中是否有尚未批准的工具动作。每个文件、联网或工作台操作均需一次性确认；不想执行时可以拒绝并重新提问。</p>
+        <h3>网页登录或 Cookie 仍存在</h3><p>网页分区使用独立 WebKit 数据区。删除分区不等于清除登录与站点数据；彻底清理前请先联系支持确认位置，不要直接删除包含收纳文件的应用数据。</p>
+
+        <h2 id="release">版本与功能</h2>
+        <table class="data-table"><tbody>
+          <tr><th>当前版本</th><td>0.28.111 build 220（本地测试版）</td></tr>
+          <tr><th>语言</th><td>随系统或每个 App 的语言设置切换；支持简体中文、繁体中文、英文、日语、韩语、西班牙语、葡萄牙语、法语、德语、泰语、越南语、印尼语、马来语、菲律宾语、意大利语、荷兰语、波兰语、俄语、土耳其语和瑞典语</td></tr>
+          <tr><th>主要能力</th><td>本地工作区、文件与媒体、便签待办、日历、网页、专注、天气和可选 AI 工具</td></tr>
+          <tr><th>天气服务</th><td>天气数据由 Apple Weather 提供，使用受其服务条款约束</td></tr>
+        </tbody></table>
+
+        <h3>仍需验收的能力</h3><ul><li>商店版：统一电脑操控、全文件访问、Dock 定位与选区导入的可用范围。</li><li>AI：新用户安装、远程服务告知、换模型、联网搜索及真实文件操作全流程。</li><li>天气与媒体：天气服务需正式身份；生图、音乐与视频需独立服务和模型；旁白需单独验证。</li><li>数据与界面：存储迁移及失败恢复，浅色与深色、窄窗口、多显示器、全屏空间和键盘操作。</li></ul>
+        <h2 id="report">反馈问题</h2>
+        <p>请发送邮件至 <a href="mailto:ideaparklenuis@gmail.com">ideaparklenuis@gmail.com</a> 联系 ideapark。反馈时请提供：应用版本、系统版本、设备信息、复现步骤、预期与实际结果；截图前请遮盖真实文件名、日历、密钥和个人内容。</p>
+        <p>报告安全漏洞时请注明“安全报告”，仅向 ideapark 私下提供必要的复现信息，不要公开披露可利用细节。</p>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="shell"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="/"><img src="/assets/app-icon.png" alt=""><span>Cubimi</span></a><p>一款本地文件收纳器。</p></div><div class="footer-col"><strong>产品</strong><a href="/">首页</a><a href="/#download">下载</a></div><div class="footer-col"><strong>法律</strong><a href="/privacy/">隐私政策</a><a href="/terms/">使用条款</a><a href="/legal/">法律声明</a></div><div class="footer-col"><strong>支持</strong><a href="#release">版本说明</a><a href="#report">反馈问题</a></div></div><div class="footer-bottom"><span>© 2026 ideapark</span><span>运营者：ideapark · 联系邮箱：<a href="mailto:ideaparklenuis@gmail.com">ideaparklenuis@gmail.com</a></span><span>支持页面最后更新于 2026-10-04。</span></div></div></footer>
+</body>
+</html>
