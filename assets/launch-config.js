@@ -60,8 +60,8 @@ window.CUBIMI_LAUNCH = {
       sub: "Available via Mac App Store or Direct Website License. Native on Apple Silicon / macOS 14+ in 20 languages.",
       masBadge: "Recommended · Official Store",
       masTitle: "Mac App Store",
-      masPrice: "$14.99",
-      masOrig: "Launch price (Regular $19.99)",
+      masPrice: "$9.99",
+      masOrig: "Launch price (Regular $14.99)",
       masDesc: "Sandboxed Apple distribution with Family Sharing and automatic updates across all your Macs.",
       masPoints: [
         "One-time purchase — all 1.x updates included",
